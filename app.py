@@ -10,7 +10,7 @@ import os
 from dotenv import load_dotenv
 from google import genai
 
-# Memuat file .env
+# file .env
 load_dotenv()
 
 app = Flask(__name__)
@@ -19,7 +19,7 @@ app = Flask(__name__)
 API_KEY = os.getenv("AI_API_KEY")
 client = genai.Client(api_key=API_KEY)
 
-# Membuat instruksi dasar (System Instruction)
+#  System Instruction
 instruksi_sekolah = """
 Kamu adalah asisten virtual resmi untuk SMA Trisakti. 
 Tugas utamamu adalah menjawab pertanyaan seputar sekolah ini.
